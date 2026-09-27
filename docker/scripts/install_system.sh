@@ -50,7 +50,21 @@ PACKAGES=(
     # nodejs
     # npm
     # default-jdk
+    # ROS 2 Jazzy packages
+    ros-jazzy-rviz2
+    ros-jazzy-navigation2
+    ros-jazzy-nav2-bringup
+    ros-jazzy-slam-toolbox
+    ros-jazzy-robot-localization
+    ros-jazzy-xacro
+    ros-jazzy-robot-state-publisher
+    ros-jazzy-joint-state-publisher
+    ros-jazzy-joy
+    ros-jazzy-teleop-twist-joy
+    python3-serial
+    python3-smbus2
 )
+
 
 echo "====> Installing apt packages..."
 apt-get install -y --no-install-recommends "${PACKAGES[@]}"

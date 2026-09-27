@@ -48,6 +48,7 @@ clone_repo() {
 
 # ------------------------------------------------------------------------------
 # REPOS — add your repositories here 👇
+   clone_repo "https://github.com/nishanmud2023/robot_ws.git" "main"
 # Format: clone_repo "<repo-url>" ["<branch>"]
 # ------------------------------------------------------------------------------
 

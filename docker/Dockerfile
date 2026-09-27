@@ -44,6 +44,12 @@ RUN chmod +x /usr/local/bin/clone_repos.sh /usr/local/bin/entrypoint.sh
 #     gedit \
 #     git
 
+# ── ROS 2 setup ───────────────────────────────────────────────────────────────
+ENV ROS_DOMAIN_ID=42
+RUN echo "source /opt/ros/jazzy/setup.bash" >> /root/.bashrc
+
 # ── Entrypoint: clone repos into the live volume, then hand off to CMD ────────
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["/bin/bash"]
+
+

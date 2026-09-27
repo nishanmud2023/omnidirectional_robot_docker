@@ -29,7 +29,7 @@ else
     echo "[!] If you use nvidia gpu, please rebuild with -n or --nvidia argument"
     docker build -t "$APP_NAME"-img -f $ROOT_DIR/docker/Dockerfile $ROOT_DIR \
                                   --network=host \
-                                  --build-arg from=ubuntu:22.04 \
+                                  --build-arg from=ros:jazzy \
                                   --build-arg USERNAME=$(whoami)
 fi
 
