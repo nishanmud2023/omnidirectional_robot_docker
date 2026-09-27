@@ -63,6 +63,7 @@ PACKAGES=(
     ros-jazzy-teleop-twist-joy
     python3-serial
     python3-smbus2
+    ros-jazzy-joint-state-publisher-gui
 )
 
 
