@@ -64,6 +64,9 @@ PACKAGES=(
     python3-serial
     python3-smbus2
     ros-jazzy-joint-state-publisher-gui
+    ros-jazzy-rplidar-ros
+    ros-jazzy-teleop-twist-keyboard
+    ros-jazzy-interactive-marker-twist-server
 )
 
 

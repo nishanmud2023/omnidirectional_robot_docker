@@ -16,7 +16,7 @@ if [[ $1 = "--nvidia" ]] || [[ $1 = "-n" ]]
                 -v "/tmp/.X11-unix:/tmp/.X11-unix:rw" \
                 -e XAUTHORITY \
                 -v /dev:/dev \
-               -v $ROOT_DIR/workspace:/ws_slam \
+               -v $ROOT_DIR/workspace:/workspace \
                --net=host \
                --privileged \
                --name "$APP_NAME" "$APP_NAME"-img
@@ -30,7 +30,7 @@ else
                 -v "/tmp/.X11-unix:/tmp/.X11-unix:rw" \
                 -e XAUTHORITY \
                 -v /dev:/dev \
-                -v $ROOT_DIR/workspace:/ws_slam \
+                -v $ROOT_DIR/workspace:/workspace \
                 -v /var/run/dbus:/var/run/dbus \
                -v /run/bluetooth:/run/bluetooth \
                --device /dev/bus/usb \

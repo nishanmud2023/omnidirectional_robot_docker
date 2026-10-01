@@ -14,3 +14,4 @@ env/
 
 # Ignore dotenv file containing environment variables
 .env
+workspace/
